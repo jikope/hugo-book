@@ -1,3 +1,80 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 31px;
+}
+
+.markdown {
+    h1 {
+	font-weight: 600 !important;
+	margin-bottom: 30px;
+    }
+}
+
+figure {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #222;
+    text-align: center;
+}
+
+.navbar-main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1rem;
+    border-bottom: 1px solid #222222;
+
+    .app-icon {
+	font-weight: 700;
+	font-size: 1.5rem;
+    }
+
+    a {
+	color: #222222;
+	font-size: 1.2rem;
+    }
+}
+
+.book-menu-content {
+    line-height: 20px;
+    label {
+	font-weight: 600;
+    }
+}
+
+.site-footer {
+    border-top: 1px solid #222;
+    padding-bottom: 1rem;
+    h1 {
+	font-weight: 500;
+    }
+    .container{
+	justify-content: space-between;
+	ul, li {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	div {
+	    margin-right: 3rem;
+	    padding: 1rem;
+	}
+	.about {
+	    width: 50%;
+	}
+	.karegory {
+	}
+	.navigasi {
+	    margin-left: 1rem;
+	}
+    }
+}
