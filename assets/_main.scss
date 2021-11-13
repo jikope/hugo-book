@@ -84,6 +84,7 @@ ul.pagination {
 
 .book-icon {
   filter: var(--icon-filter);
+  cursor: pointer;
 }
 
 .book-brand {
@@ -178,7 +179,7 @@ body[dir="rtl"] .book-menu {
 .book-header {
   display: none;
   //margin-bottom: $padding-16;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
   label {
     line-height: 0;

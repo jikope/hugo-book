@@ -28,6 +28,12 @@
 	<header class="book-header">
           {{ template "header" . }} <!-- Mobile layout header -->
 	</header>
+	<div class="before-content">
+	    <strong class="title">{{ partial "docs/title" . }}</strong>
+	    {{ if eq .Params.showthedate "show" | default "true" }}
+	    <p class="published-date">{{ .PublishDate.Format "2 January 2006" }}</p>
+	    {{ end }}
+	</div>
 
 	{{ partial "docs/inject/content-before" . }}
 	{{ template "main" . }} <!-- Page Content -->

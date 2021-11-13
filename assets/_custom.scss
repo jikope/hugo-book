@@ -1,10 +1,11 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 31px;
 }
 
@@ -49,6 +50,21 @@ figcaption {
     label {
 	font-weight: 600;
     }
+}
+
+.before-content {
+    .title {
+	font-size: 2rem;
+	text-align: center;
+    }
+
+    .published-date {
+	margin: 0;
+	padding: 0;
+	font-weight: 200;
+    }
+
+    margin-bottom: 1rem;
 }
 
 .site-footer {
