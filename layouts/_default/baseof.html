@@ -32,6 +32,7 @@
 	    <strong class="title">{{ partial "docs/title" . }}</strong>
 	    {{ if eq .Params.showthedate "show" | default "true" }}
 	    <p class="published-date">{{ .PublishDate.Format "2 January 2006" }}</p>
+	    <p class="author">{{ $.Site.Params.author }}</p>
 	    {{ end }}
 	</div>
 
@@ -75,7 +76,7 @@
       <div class="container flex">
 	<div class="about">
 	  <h2>About</h2>
-	  <p>WorldOfGamelans.com merupakan website untuk mendokumentasi segala pengetahuan tentang gamelan jawa. </p>
+	  <p>WorldOfGamelans.xyz merupakan website untuk mendokumentasi segala pengetahuan tentang gamelan jawa. </p>
 	</div>
 	<div class="kategory">
 	  <h2>

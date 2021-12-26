@@ -47,7 +47,7 @@ img {
 aside nav ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none; // Sidebar-custom
 
   li {
     margin: 1em 0;
@@ -55,6 +55,7 @@ aside nav ul {
   }
 
   a {
+    font-size: 0.9rem;
     display: block;
   }
 
