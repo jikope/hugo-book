@@ -3,70 +3,71 @@
   <head>
     {{ partial "docs/html-head" . }}
     {{ partial "docs/inject/head" . }}
+    {{ partial "victorhugo.html" .}}
   </head>
   <body dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
     <input type="checkbox" class="hidden toggle" id="menu-control" />
     <input type="checkbox" class="hidden toggle" id="toc-control" />
     <div class="container navbar-main flex align-center justify-between">
       <div class="left">
-	<a class="app-icon "href="/">
-	  {{ .Site.Title }}
-	</a>
+        <a class="app-icon "href="/">
+          {{ .Site.Title }}
+        </a>
       </div>
       <div class="right">
-	<a href="/about">About</a>
+        <a href="/about">About</a>
       </div>
     </div>
     <main class="container flex">
       <!-- <aside class="book-menu"> -->
-	<!--   <div class="book-menu-content"> -->
-	  <!--     {{ template "menu" . }} <\!-- Left menu Content -\-> -->
-	    <!--   </div> -->
-	<!-- </aside> -->
+        <!--   <div class="book-menu-content"> -->
+          <!--     {{ template "menu" . }} <\!-- Left menu Content -\-> -->
+            <!--   </div> -->
+        <!-- </aside> -->
 
       <div class="book-page">
-	<header class="book-header">
+        <header class="book-header">
           {{ template "header" . }} <!-- Mobile layout header -->
-	</header>
-	<div class="before-content">
-	    <strong class="title">{{ partial "docs/title" . }}</strong>
-	    {{ if eq .Params.showthedate "show" | default "true" }}
-	    <p class="published-date">{{ .PublishDate.Format "2 January 2006" }}</p>
-	    <p class="author">{{ $.Site.Params.author }}</p>
-	    {{ end }}
-	</div>
+        </header>
+        <div class="before-content">
+          <strong class="title">{{ partial "docs/title" . }}</strong>
+          {{ if eq .Params.showthedate "show" | default "true" }}
+          <p class="published-date">{{ .PublishDate.Format "2 January 2006" }}</p>
+          <p class="author">{{ $.Site.Params.author }}</p>
+          {{ end }}
+        </div>
 
-	{{ partial "docs/inject/content-before" . }}
-	{{ template "main" . }} <!-- Page Content -->
-	{{ partial "docs/inject/content-after" . }}
+        {{ partial "docs/inject/content-before" . }}
+        {{ template "main" . }} <!-- Page Content -->
+        {{ partial "docs/inject/content-after" . }}
 
-	<!-- <footer class="book-footer"> {{ template "footer" . }} <\!-- Footer under page content -\-> -->
-	    <!--   {{ partial "docs/inject/footer" . }} -->
-	    <!-- </footer> -->
+        <!-- <footer class="book-footer"> {{ template "footer" . }} <\!-- Footer under page content -\-> -->
+            <!--   {{ partial "docs/inject/footer" . }} -->
+            <!-- </footer> -->
 
-	{{ template "comments" . }} <!-- Comments block -->
+        {{ template "comments" . }} <!-- Comments block -->
 
-	<label for="menu-control" class="hidden book-menu-overlay"></label>
+        <label for="menu-control" class="hidden book-menu-overlay"></label>
       </div>
 
       <aside class="book-menu">
-	<div class="book-menu-content">
+        <div class="book-menu-content">
           {{ template "menu" . }} <!-- Left menu Content -->
-	</div>
+        </div>
       </aside>
 
       <!-- <aside class="book-toc"> -->
-	<!--   <div class="book-toc-content"> -->
-	  <!--     {{ template "toc" . }} <\!-- Table of Contents -\-> -->
-	    <!--   </div> -->
-	<!-- </aside> -->
+        <!--   <div class="book-toc-content"> -->
+          <!--     {{ template "toc" . }} <\!-- Table of Contents -\-> -->
+            <!--   </div> -->
+        <!-- </aside> -->
 
       <!-- {{ if default true (default .Site.Params.BookToC .Params.BookToC) }} -->
       <!-- <aside class="book-toc"> -->
-	<!--   <div class="book-toc-content"> -->
-	  <!--     {{ template "toc" . }} <\!-- Table of Contents -\-> -->
-	    <!--   </div> -->
-	<!-- </aside> -->
+        <!--   <div class="book-toc-content"> -->
+          <!--     {{ template "toc" . }} <\!-- Table of Contents -\-> -->
+            <!--   </div> -->
+        <!-- </aside> -->
       <!-- {{ end }} -->
     </main>
 
@@ -74,24 +75,24 @@
     <!-- Site footer -->
     <footer class="site-footer container">
       <div class="container flex">
-	<div class="about">
-	  <h2>About</h2>
-	  <p>WorldOfGamelans.xyz merupakan website untuk mendokumentasi segala pengetahuan tentang gamelan jawa. </p>
-	</div>
-	<div class="kategory">
-	  <h2>
-	    Katerogi Post
-	  </h2>
-	  <ul>
-	    <li>Gamelan Jawa</li>
-	    <li>Perangkat Gamelan</li>
-	    <li>Laras</li>
-	  </ul>
-	</div>
-	<div class="navigasi">
-	  <h2>
-	  </h2>
-	</div>
+        <div class="about">
+          <h2>About</h2>
+          <p>WorldOfGamelans.xyz merupakan website untuk mendokumentasi segala pengetahuan tentang gamelan jawa. </p>
+        </div>
+        <div class="kategory">
+          <h2>
+            Katerogi Post
+          </h2>
+          <ul>
+            <li>Gamelan Jawa</li>
+            <li>Perangkat Gamelan</li>
+            <li>Laras</li>
+          </ul>
+        </div>
+        <div class="navigasi">
+          <h2>
+          </h2>
+        </div>
       </div>
     </footer>
   </body>
